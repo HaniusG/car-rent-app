@@ -1,0 +1,86 @@
+.footer {
+  border-top: 1px solid rgb(165, 165, 165);
+  background-color: rgb(255, 248, 241);
+  p,
+  li,
+  span {
+    line-height: 2;
+    font-size: 14px;
+  }
+}
+
+.footerWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0 60px 0;
+  gap: 30px 0;
+  h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  li {
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      color: #ff4d30;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .footerWrapper {
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footerPart {
+  p {
+    width: 250px;
+    color: rgb(88, 88, 88);
+  }
+
+  ul {
+    line-height: 2;
+    padding: 0;
+    list-style: none;
+  }
+
+  .contactInfo {
+    font-weight: 800;
+    li {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+  .workingHours {
+    li {
+      &:hover {
+        color: black;
+      }
+      cursor: text;
+    }
+  }
+  .subscription {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    input {
+      border: 1px solid grey;
+      padding: 8px 10px;
+      border-radius: 2px;
+      outline: none;
+    }
+    button {
+      padding: 8px;
+      &:hover {
+        background-color: #ec2e11 !important;
+        color: white;
+      }
+    }
+  }
+}

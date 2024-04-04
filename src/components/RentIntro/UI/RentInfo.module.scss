@@ -1,0 +1,58 @@
+.rentInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img{
+      width: 55%;
+      object-fit: contain;
+  }
+
+  .textInfo {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    h2 {
+      font-size: 23px;
+      font-weight: 900;
+    }
+    h1 {
+      margin: 10px 0;
+      font-size: 60px;
+      span {
+        font-size: 60px;
+        color: #ff4c30;
+      }
+    }
+    p {
+      margin: 40px 0;
+      color: #7c767b;
+    }
+    .rentInfoBtns {
+      display: flex;
+      gap: 20px;
+      .bookRide {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+  
+}
+
+
+@media screen and (max-width: 1200px){
+  .rentInfo {
+    text-align: center;
+    img{
+        display: none;
+    }
+    .textInfo{
+      width: 80%;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

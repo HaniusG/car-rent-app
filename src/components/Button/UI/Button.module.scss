@@ -1,0 +1,60 @@
+//variables
+$black: #010103;
+$blue: #4681f4;
+$orange: #ff4c30;
+
+//mixin for button styling
+@mixin button-style {
+  border: 2px solid $black;
+  background-color: $black;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.35);
+  
+  &:hover {
+    background-color: white;
+    color: $black;
+  }
+}
+
+// Default button style
+.defaultButton {
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  background-color: $orange;
+  border: none;
+  padding: 18px 35px;
+  border-radius: 4px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &.blackButton {
+    @include button-style;
+    border-color: $black;
+    background-color: $black;
+  }
+
+  &.blueButton {
+    @include button-style;
+    border-color: $blue;
+    background-color: $blue;
+
+    &:hover {
+      background-color: white;
+      color: $blue;
+    }
+  }
+
+  &.orangeButton {
+    @include button-style;
+    border-color: $orange;
+    background-color: $orange;
+
+    &:hover {
+      background-color: white;
+      color: $orange;
+    }
+  }
+}

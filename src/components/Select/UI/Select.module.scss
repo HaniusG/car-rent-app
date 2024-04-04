@@ -1,0 +1,28 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  
+  .title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    span {
+      font-weight: 600;
+    }
+
+    svg {
+      color: rgb(72, 111, 219);
+      font-size: 29px;
+    }
+  }
+  
+  select {
+    padding: 10px 5px;
+    font-size: 15px;
+    border: 1px solid #ababab;
+    color: #ababab;
+    outline: none;
+    margin-top: 10px;
+    border-radius: 2px;
+  }
+}

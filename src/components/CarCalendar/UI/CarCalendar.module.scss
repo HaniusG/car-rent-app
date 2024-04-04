@@ -1,0 +1,32 @@
+.calendarWrapper {
+  padding: 10px 10px;
+  border: 1px solid #ababab;
+  color: #ababab;
+  outline: none;
+  margin-top: 10px;
+  position: relative;
+  border-radius: 2px;
+
+  .calendarInput {
+    display: flex;
+    justify-content: space-between;
+
+    >span,
+    >button {
+      font-size: 15px;
+    }
+    >button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.calendar {
+  position: absolute;
+  width: 280px;
+  height: 300px;
+  margin: 10px;
+  top: 50px;
+}

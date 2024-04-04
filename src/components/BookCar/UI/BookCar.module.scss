@@ -1,0 +1,34 @@
+.bookCar {
+    background-color: #f2f5f7;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    h2 {
+        font-weight: 1000;
+        font-size: 30px;
+    }
+    .selectContainer {
+        margin-top: 30px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        >button {
+            max-height: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bookCar .selectContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .bookCar .selectContainer {
+        grid-template-columns: 1fr;
+    }
+}
