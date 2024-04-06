@@ -6,6 +6,7 @@ import BookCar from '../../components/BookCar';
 import Calendar from 'react-calendar';
 import VehicleSelect from '../../components/VehicleSelect';
 import Footer from '../../components/Footer';
+import TripPlanInfo from '../../components/TripPlanInfo';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header/>
       <RentInfo/>
       <BookCar/>
+      <TripPlanInfo/>
       <VehicleSelect/>
       <Footer/>
     </div>

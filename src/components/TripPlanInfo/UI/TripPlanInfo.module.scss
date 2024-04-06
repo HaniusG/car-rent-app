@@ -1,0 +1,21 @@
+.planTrip {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  h3{
+    font-size: 24px;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: 46px;
+    margin-bottom: 80px;
+  }
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px 0;
+}
