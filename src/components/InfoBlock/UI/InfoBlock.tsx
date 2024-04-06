@@ -7,8 +7,13 @@ interface InfoBlockProps {
 }
 
 const InfoBlock:React.FC<InfoBlockProps> = ({children, column}) => {
+  let infoBlockClassName: string = styles.infoBlock;
+
+  if (!column) {
+    infoBlockClassName += ' ' + styles.horizontal;
+  }
   return (
-    <div className={styles.infoBlock}>
+    <div className={infoBlockClassName}>
       {children}
     </div>
   )

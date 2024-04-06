@@ -1,0 +1,47 @@
+.dealsSection {
+  .dealsInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+
+  justify-content: center;
+  img {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  h1,
+  h3,
+  p {
+    text-align: left !important;
+  }
+  .discoverDet{
+    max-width: 600px;
+  }
+  .infoBockSection{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+
+  .dealsSection {
+  .dealsInfo{
+    justify-content: space-around;
+    .discoverDet{
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      h3, h1{
+        text-align: center !important;
+      }
+    }
+  }}
+}

@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../../../redux/store";
 import { useDispatch } from "react-redux";
 import { carProps, choseCar } from "../../../redux/cars/carsSlice";
+import InfoHeader from "../../InfoHeader";
 
 const VehicleSelect = () => {
   const dispatch = useDispatch();
@@ -21,9 +22,12 @@ const VehicleSelect = () => {
   return (
     <Container>
       <div className={styles.carChoseHeader}>
+        <InfoHeader>
         <h3>Vehicle Modelss</h3>
         <h1>Our rental fleet</h1>
         <p>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</p>
+        </InfoHeader>
+        
       </div>
       
       <div className={styles.choseCarWrapper}>

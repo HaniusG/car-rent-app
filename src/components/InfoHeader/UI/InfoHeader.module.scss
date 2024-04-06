@@ -1,0 +1,17 @@
+.infoHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+  h3{
+    font-size: 24px;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: 46px;
+  }
+  p{
+    color:#767679;
+  }
+}
