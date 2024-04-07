@@ -1,0 +1,30 @@
+.reviewCard {
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.08);
+  max-width: 560px;
+  padding: 50px;
+  box-sizing: border-box;
+  p{
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .reviewerInfo{
+    display: flex;
+    align-items: center;
+    h5{
+      font-weight: normal;
+    }
+    img{
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+    .imgDiv{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+   
+  }
+}

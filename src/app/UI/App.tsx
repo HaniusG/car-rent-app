@@ -9,6 +9,7 @@ import Footer from '../../components/Footer';
 import TripPlanInfo from '../../components/TripPlanInfo';
 import BlackBanner from '../../components/BlackBanner';
 import DealsSection from '../../components/DealsSection';
+import Testimonials from '../../components/Testimonials';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <VehicleSelect/>
       <BlackBanner/>
       <DealsSection/>
+      <Testimonials/>
       <Footer/>
     </div>
   );

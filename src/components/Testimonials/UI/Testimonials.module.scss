@@ -1,0 +1,12 @@
+.reviewCardWrapper{
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+@media screen and (max-width:1250px) {
+  .reviewCardWrapper{
+    justify-content: space-around;
+  }
+}
