@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./RentInfo.module.scss";
+import styles from "./RentIntro.module.scss";
 import Button from "../../Button";
 import { FaRegCheckCircle } from "react-icons/fa";
 import Container from "../../Container";

@@ -39,6 +39,10 @@ const Header = () => {
                 <a href="#">Contact</a>
               </li>
             </ul>
+            <div className={styles.authButtons}>
+                <Button version="black">Sign In</Button>
+                <Button version="orange">Register</Button>
+            </div>
         </div>
       </nav>
 

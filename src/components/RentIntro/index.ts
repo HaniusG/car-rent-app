@@ -1,3 +1,3 @@
-import RentInfo from "./UI/RentInfo";
+import RentInfo from "./UI/RentIntro";
 
 export default RentInfo

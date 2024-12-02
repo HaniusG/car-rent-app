@@ -2,16 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  width: 1200px;
+  padding: 20px;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-@media screen and (max-width: 1200px) {
-  .header {
-    width: calc(100% - 40px);
-    padding: 0 20px;
-  }
 }
 
 .logo {
@@ -24,7 +17,7 @@
   }
 }
 
-.logoName{
+.logoName {
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -59,41 +52,13 @@
 
 .openMenu svg{
   display: none;
-  font-size: 35px;
+  font-size: 50px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: color 0.2s;
-  &:hover{
+  transition: all 0.2s;
+  &:hover {
     color: #ff3817;
-  }
-}
-
-@media screen and (max-width: 1200px){
-  .navigation ul{
-    display: none;
-  }
-  .openMenu svg{
-    display: flex;
-  }
-  .openMenu{
-    transition: 0.2s;
-    display: flex;
-    &:hover ul{
-      gap: 0;
-      z-index: 1;
-      display: flex;
-      background-color: white;
-      position: absolute;
-      justify-content: space-around;
-      top: 0;
-      left: 0;
-      width: 100%;
-      border: 1px solid black;
-      height: 80px;
-      align-items: center;
-      margin: 0;
-    }
   }
 }
 
@@ -101,4 +66,125 @@
   gap: 20px;
   display: flex;
   justify-content: space-between;
+}
+
+.navigation .authButtons {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    width: calc(100% - 40px);
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .navigation ul, .navigation .authButtons {
+    display: none;
+  }
+  .openMenu svg {
+    display: flex;
+  }
+  .openMenu {
+    transition: 0.2s;
+    display: flex;
+    &:hover ul {
+      gap: 0;
+      z-index: 1;
+      display: flex;
+      background-color: white;
+      position: absolute;
+      justify-content: space-between;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid black;
+      height: 80px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 60px;
+      li {
+        padding: 20px;
+      }
+    }
+    &:hover .authButtons {
+      display: flex;
+      position: absolute;
+      z-index: 2;
+      top: 75px;
+      right: 20px;
+      margin: 0 auto;
+      button {
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .openMenu {
+    &:hover ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  &:hover .authButtons {
+    top: 120px
+  }
+}}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    svg {
+      font-size: 55px;
+    }
+  }
+
+  .logoName {
+    h1 {
+      font-size: 25px;
+    }
+    span {
+      margin-left: -0.5px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  header > .authButtons {
+    display: none;
+  }
+
+  .openMenu .authButtons {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .openMenu {
+    &:hover ul {
+    padding-bottom: 120px;
+   }
+
+    &:hover .authButtons {
+    top: 140px
+    }
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .openMenu {
+    &:hover ul {
+    padding-bottom: 140px;
+   }
+
+    &:hover .authButtons {
+    top: 160px
+    }
+  }
 }

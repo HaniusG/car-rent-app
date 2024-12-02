@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
 			<div className={styles.footerWrapper}>
-			<div className={styles.footerPart}>
+			<div className={`${styles.footerPart} ${styles.weOffer}`}>
         <h2>CAR Rental</h2>
         <p>
           We offers a big range of vehicles for all your driving needs. We have

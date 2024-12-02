@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from '../../components/Header';
-import RentInfo from '../../components/RentIntro';
+import RentIntro from '../../components/RentIntro';
 import BookCar from '../../components/BookCar';
 import Calendar from 'react-calendar';
 import VehicleSelect from '../../components/VehicleSelect';
@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <RentInfo/>
+      <RentIntro/>
       <BookCar/>
       <TripPlanInfo/>
       <VehicleSelect/>
